@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
-import {HomeCS, OurCoffeeCS, OurCoffeeDetailsCS, ForYourPleasureCS} from './layout'
-import {MenuCS} from './ComponentsCS'
+import {HomeCS, OurCoffeeCS, OurCoffeeDetailsCS, ForYourPleasureCS} from './layout';
+import {MenuCS} from './ComponentsCS';
 
 import './App.scss';
 

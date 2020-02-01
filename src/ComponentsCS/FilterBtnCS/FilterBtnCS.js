@@ -5,7 +5,7 @@ import './FilterBtnCS.scss'
 export default class FilterBtnCS extends Component{
     render() {
         return (
-            <div className={'FilterBtn'}>
+            <div className={'filterBtn'}>
                 Or filter
                 {
                     this.props.data.map((el, index)=>{

@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import {OurCoffeeHeadCS} from "../../ComponentsCS";
+import {CommonSmallBlockCS} from "../../ComponentsCS";
 import {coffee as db} from './../../db'
-
-import './OurCoffeeDetailsCS.scss'
 
 export default class OurCoffeeDetailsCS extends Component {
     state = {
@@ -37,7 +35,7 @@ export default class OurCoffeeDetailsCS extends Component {
     render() {
         return (
             <div className={'OurCoffeeCS'}>
-                <OurCoffeeHeadCS label={'Our Coffee'} headerStyle={'header'}/>
+                <CommonSmallBlockCS label={'Our Coffee'} headerStyle={'header'}/>
                 {this.state.el}
             </div>
         );

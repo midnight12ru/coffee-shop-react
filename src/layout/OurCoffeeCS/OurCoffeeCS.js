@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import {CardCS, FilterBtnCS, OurCoffeeHeadCS, SearchCS} from "../../ComponentsCS";
+import {CardCS, FilterBtnCS, CommonSmallBlockCS, SearchCS} from "../../ComponentsCS";
 import {coffee as dbCoffee} from './../../db'
 import unique from './../../func/unique'
 
-import './OurCoffeeCS.scss'
-
 import coffeeGirl from './../../res/coffee_girl.jpg'
+
+import './OurCoffeeCS.scss'
 
 export default class OurCoffeeCS extends Component {
     state = {
@@ -26,11 +26,11 @@ export default class OurCoffeeCS extends Component {
 
     render() {
         return (
-            <div className={'OurCoffeeCS'}>
-                <OurCoffeeHeadCS label={'Our Coffee'} headerStyle={'header'}/>
-                <div className="OurCoffeeCS__desc">
+            <div className={'OurCoffee'}>
+                <CommonSmallBlockCS label={'Our Coffee'} headerStyle={'bg-img'}/>
+                <div className="OurCoffee__wrap">
                     <img src={coffeeGirl} alt="" className="OurCoffeeCS__desc-pic"/>
-                    <div className="OurCoffeeCS__desc-text">
+                    <div className="OurCoffee__desc">
                         <h3 className={'title'}>About our beans</h3>
                         <div className="grains-icon grains-icon-b"/>
                         <p>
@@ -46,7 +46,7 @@ export default class OurCoffeeCS extends Component {
                     </div>
                 </div>
                 <div className="line"/>
-                <div className="OurCoffeeCS__list list">
+                <div className="OurCoffee__list list">
                     <div className="list__head">
                         <SearchCS/>
                         <FilterBtnCS data={this.state.country}/>

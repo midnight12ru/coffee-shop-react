@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Merienda', sans-serif;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  justify-content: center;
+
+  a {
+    color: black !important;
+  }
+}
+
+.grains {
+  &-icon {
+    width: 200px;
+    height: 29.3px;
+    margin: 20px auto 0;
+
+    &-w {
+      background: url("./res/BeansW.png") no-repeat center;
+    }
+
+    &-b {
+      background: url("./res/BeansB.png") no-repeat center;
+    }
+
+    &-w, &-b {
+      background-size: contain;
+    }
+  }
+}

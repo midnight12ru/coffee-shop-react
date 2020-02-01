@@ -1,0 +1,26 @@
+.search{
+  label{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .input{
+    font-family: 'Merienda', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 0;
+    width: 180px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    outline: none;
+    margin-left: 19px;
+    &:hover,
+    &:focus{
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.55);
+    }
+  }
+}

@@ -3,7 +3,7 @@ import {CardCS, HeaderCS} from "../../ComponentsCS";
 
 import db from './../../db'
 
-import './HomeCS.scss'
+import './HomeCS.scss';
 
 export default class HomeCS extends Component {
     state = {
@@ -52,7 +52,7 @@ export default class HomeCS extends Component {
                 </div>
                 <div className="best flex-center">
                     <h3 className={'title'}>Our best</h3>
-                    <div className="collect flex-center">
+                    <div className="deck flex-center">
                         {
                             this.state.drawnCards
                         }
