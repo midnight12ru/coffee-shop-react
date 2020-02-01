@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {CardCS, FilterBtnCS, SearchCS, OurCoffeeHeadCS} from "../../ComponentsCS";
+import {CardCS, FilterBtnCS, OurCoffeeHeadCS, SearchCS} from "../../ComponentsCS";
 import {coffee as dbCoffee} from './../../db'
 import unique from './../../func/unique'
 
@@ -27,7 +27,7 @@ export default class OurCoffeeCS extends Component {
     render() {
         return (
             <div className={'OurCoffeeCS'}>
-                <OurCoffeeHeadCS />
+                <OurCoffeeHeadCS label={'Our Coffee'} headerStyle={'header'}/>
                 <div className="OurCoffeeCS__desc">
                     <img src={coffeeGirl} alt="" className="OurCoffeeCS__desc-pic"/>
                     <div className="OurCoffeeCS__desc-text">
@@ -55,9 +55,9 @@ export default class OurCoffeeCS extends Component {
                         {
                             dbCoffee.map((el, index) => {
                                 return (
-                                        <CardCS {...el} key={index}>
-                                            <p className={'country'}>{el.country}</p>
-                                        </CardCS>
+                                    <CardCS {...el} key={index}>
+                                        <p className={'country'}>{el.country}</p>
+                                    </CardCS>
                                 )
                             })
                         }

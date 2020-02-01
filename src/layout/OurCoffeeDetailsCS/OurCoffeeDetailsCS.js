@@ -37,7 +37,7 @@ export default class OurCoffeeDetailsCS extends Component {
     render() {
         return (
             <div className={'OurCoffeeCS'}>
-                <OurCoffeeHeadCS/>
+                <OurCoffeeHeadCS label={'Our Coffee'} headerStyle={'header'}/>
                 {this.state.el}
             </div>
         );

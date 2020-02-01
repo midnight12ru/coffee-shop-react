@@ -1,7 +1,9 @@
-.menuCS {
-  display: flex;
-  padding: 0;
-  margin: 0;
+.menu {
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
 
   &__item {
     list-style: none;
@@ -18,14 +20,14 @@
   }
 }
 
-.footer{
+.footer {
   min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  a{
+  a {
     color: black;
   }
 }

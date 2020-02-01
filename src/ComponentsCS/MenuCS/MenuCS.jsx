@@ -22,7 +22,7 @@ export default class MenuCS extends Component {
                 linkTo = el.linkTo.split(' ').join('-');
 
             return (
-                <li key={id} className={`menuCS__item ${specialСlass}`}>
+                <li key={id} className={`menu__item ${specialСlass}`}>
                     <Link to={linkTo}>
                         {img}
                         {text}
@@ -40,7 +40,7 @@ export default class MenuCS extends Component {
         let grains = this.props.pos === 'footer' ? <div className="grains-icon grains-icon-b"/> : null;
         return (
             <div className={this.props.pos}>
-                <ul className={`menuCS`}>
+                <ul className={`menu__list`}>
                     {this.state.drawnElement}
                 </ul>
                 {grains}
