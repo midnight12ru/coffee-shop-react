@@ -1,0 +1,30 @@
+.cardCS {
+  width: 240px;
+  height: 220px;
+  color: #000;
+  padding: 24.5px;
+
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  &__img {
+    width: 151px;
+    height: 130px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__price{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+  }
+}

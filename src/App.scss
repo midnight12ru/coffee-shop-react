@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Merienda', sans-serif;
+}
+
+.grains-icon {
+  width: 200px;
+  height: 29.3px;
+  margin: 20px auto 0;
+  &-w {
+    background: url("./res/BeansW.png") no-repeat center;
+    background-size: contain;
+  }
+  &-b{
+    background: url("./res/BeansBlack.png") no-repeat center;
+    background-size: contain;
+  }
+}
+
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.head {
+  position: absolute;
+  top: 52px;
+  left: 10.42%;
+}

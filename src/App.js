@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {Switch, Route} from 'react-router-dom';
+import {HomeCS, OurCoffeeCS, OurCoffeeDetailsCS} from './layout'
+import {MenuCS} from './ComponentsCS'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+
+export default class App extends Component {
+    state = {
+        link: [
+            {
+                id: 1,
+                img: 'logo',
+                text: 'Coffee house',
+                specialСlass: ['logo', 'link'],
+                linkTo: '/'
+            },
+            {
+                id: 2,
+                text: 'Our coffee',
+                specialСlass: ['link'],
+                linkTo: '/Our-coffee'
+            },
+            {
+                id: 3,
+                text: 'For your pleasure',
+                specialСlass: ['link'],
+                linkTo: '/For-your-pleasure'
+            }
+        ]
+    };
+
+    render() {
+        return (
+            <div className={'App'}>
+                <MenuCS link={this.state.link} pos={'head'}/>
+                <Switch>
+                    <Route exact path='/' component={HomeCS} />
+                    <Route path='/Our-coffee' exact component={OurCoffeeCS}/>
+                    <Route path='/Our-coffee/:name' component={OurCoffeeDetailsCS}/>
+                </Switch>
+                <MenuCS link={this.state.link} pos={'footer'}/>
+            </div>
+        );
+    }
 }
-
-export default App;
