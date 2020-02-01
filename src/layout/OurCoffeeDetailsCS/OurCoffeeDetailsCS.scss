@@ -1,0 +1,29 @@
+.OurCoffeeDetails {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+  margin: 70px auto 30px;
+
+
+  &__img {
+    width: 392px;
+    height: auto;
+  }
+
+  &__info {
+  max-width: 420px;
+  }
+
+  &__label {
+    text-align: center;
+  }
+
+  &__country {
+  }
+
+  &__desc {
+  }
+
+  &__price {
+  }
+}

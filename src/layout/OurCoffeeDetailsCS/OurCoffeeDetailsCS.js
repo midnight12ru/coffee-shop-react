@@ -2,7 +2,13 @@ import React, {Component} from "react";
 import {OurCoffeeHeadCS} from "../../ComponentsCS";
 import {coffee as db} from './../../db'
 
+import './OurCoffeeDetailsCS.scss'
+
 export default class OurCoffeeDetailsCS extends Component {
+    state = {
+        el: []
+    };
+
     componentDidMount() {
         console.log(this.props.match.params.name);
         console.log(db);
@@ -10,31 +16,30 @@ export default class OurCoffeeDetailsCS extends Component {
 
         db.forEach(el => {
             let u = el.name.toLocaleLowerCase() === this.props.match.params.name.split('-').join(' ').toLocaleLowerCase();
-            if (u) {
-                i = el
-            }
+            if (u) i = el
         });
 
         let newEL = (
-            <div>
-                <img src={i.url} alt=""/>
-                <div></div>
-                <h2>{i.name}</h2>
+            <div className={'OurCoffeeDetails'}>
+                <img src={i.url} alt="" className={'OurCoffeeDetails__img'}/>
+                <div className={'OurCoffeeDetails__info'}>
+                    <h2 className={'OurCoffeeDetails__label'}>{i.name}</h2>
+                    <div className="grains-icon grains-icon-b"/>
+                    <p className={'OurCoffeeDetails__country'}><b>Country</b>: {i.country}</p>
+                    <p className={'OurCoffeeDetails__desc'}><b>Description</b>: {i.description}</p>
+                    <p className={'OurCoffeeDetails__price'}><b>Price</b>: {i.price}</p>
+                </div>
             </div>
-        )
+        );
+        this.setState({el: newEL});
     }
 
     render() {
         return (
             <div className={'OurCoffeeCS'}>
                 <OurCoffeeHeadCS/>
+                {this.state.el}
             </div>
         );
     }
 }
-
-// name: "Solimo Coffee Beans 2 kg"
-// country: "Kenya"
-// url: "https://images-na.ssl-images-amazon.com/images/I/815O9ktyfUL._SL1500_.jpg"
-// price: "10.73$"
-// description
