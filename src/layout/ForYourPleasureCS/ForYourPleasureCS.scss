@@ -1,0 +1,17 @@
+.pleasure {
+  .bg {
+    background: url('./../../res/pleasure.png') no-repeat center;
+    background-size: cover;
+  }
+
+  &__wrap {
+    width: 740px;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 60px;
+  }
+  
+  &__desc{
+    text-align: center;
+  }
+}

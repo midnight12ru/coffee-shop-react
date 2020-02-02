@@ -3,20 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="e19dbf55-3a57-40fa-b952-2aefe6e3a248" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/CardCS/CardCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/CardCS/CardCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/FilterBtnCS/FilterBtnCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/FilterBtnCS/FilterBtnCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/FooterCS/FooterCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/FooterCS/FooterCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/HeaderCS/HeaderCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/HeaderCS/HeaderCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/MenuCS/MenuCS.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/OurCoffeeHeadCS/OurCoffeeHeadCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/CommonSmallBlockCS/CommonSmallBlockCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/SearchCS/SearchCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/SearchCS/SearchCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComponentsCS/CardCS/CardCS.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsCS/CardCS/CardCS.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/ForYourPleasureCS/ForYourPleasureCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/ForYourPleasureCS/ForYourPleasureCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/HomeCS/HomeCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/HomeCS/HomeCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/OurCoffeeCS/OurCoffeeCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/OurCoffeeCS/OurCoffeeCS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/OurCoffeeCS/OurCoffeeCS.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/OurCoffeeCS/OurCoffeeCS.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/OurCoffeeDetailsCS/OurCoffeeDetailsCS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/OurCoffeeDetailsCS/OurCoffeeDetailsCS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/BeansBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/img/Coffee_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/img/Main_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/img/coffee_girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/img/coffee_item.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/img/paper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/logo/Beans_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/logo/Beans_logo_dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/logo/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/logo/Logo_black.svg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +100,7 @@
       <workItem from="1580398181189" duration="17300000" />
       <workItem from="1580544092378" duration="16234000" />
       <workItem from="1580574638821" duration="15290000" />
+      <workItem from="1580631984805" duration="4874000" />
     </task>
     <servers />
   </component>

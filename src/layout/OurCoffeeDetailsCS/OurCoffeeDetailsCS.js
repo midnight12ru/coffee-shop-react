@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {CommonSmallBlockCS} from "../../ComponentsCS";
 import {coffee as db} from './../../db'
+import './OurCoffeeDetailsCS.scss'
 
 export default class OurCoffeeDetailsCS extends Component {
     state = {
@@ -18,14 +19,16 @@ export default class OurCoffeeDetailsCS extends Component {
         });
 
         let newEL = (
-            <div className={'OurCoffeeDetails'}>
-                <img src={i.url} alt="" className={'OurCoffeeDetails__img'}/>
-                <div className={'OurCoffeeDetails__info'}>
-                    <h2 className={'OurCoffeeDetails__label'}>{i.name}</h2>
-                    <div className="grains-icon grains-icon-b"/>
-                    <p className={'OurCoffeeDetails__country'}><b>Country</b>: {i.country}</p>
-                    <p className={'OurCoffeeDetails__desc'}><b>Description</b>: {i.description}</p>
-                    <p className={'OurCoffeeDetails__price'}><b>Price</b>: {i.price}</p>
+            <div className={'OurCoffeeDetails__content'}>
+                <div className="wrap">
+                    <img src={i.url} alt="" className={'OurCoffeeDetails__img'}/>
+                    <div className={'OurCoffeeDetails__info'}>
+                        <h2 className={'OurCoffeeDetails__label'}>{i.name}</h2>
+                        <div className="grains-icon grains-icon-b"/>
+                        <p className={'OurCoffeeDetails__country'}><b>Country</b>: {i.country}</p>
+                        <p className={'OurCoffeeDetails__desc'}><b>Description</b>: {i.description}</p>
+                        <p className={'OurCoffeeDetails__price'}><b>Price</b>: {i.price}</p>
+                    </div>
                 </div>
             </div>
         );
@@ -34,8 +37,8 @@ export default class OurCoffeeDetailsCS extends Component {
 
     render() {
         return (
-            <div className={'OurCoffeeCS'}>
-                <CommonSmallBlockCS label={'Our Coffee'} headerStyle={'header'}/>
+            <div className={'OurCoffeeDetails OurCoffee'}>
+                <CommonSmallBlockCS label={'Our Coffee'} headerStyle={'bg-img'}/>
                 {this.state.el}
             </div>
         );

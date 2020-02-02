@@ -1,0 +1,27 @@
+.OurCoffeeDetails {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    max-width: 395px;
+  }
+  &__info{
+    max-width: 418px;
+  }
+  &__label{
+    text-align: center;
+  }
+  .wrap{
+    width: 865px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
